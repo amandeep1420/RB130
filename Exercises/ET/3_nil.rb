@@ -1,0 +1,3 @@
+assert_nil(value)
+
+# not sure if error message can be given as last arg...

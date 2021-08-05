@@ -144,3 +144,38 @@ class Clock
       self.minute == other_clock.minute
   end
 end
+
+
+=begin
+
+execution starts on line 10 with method invocation
+
+execution then moves to the method implementation on line 2, 
+where the local variable number is initialized to the value of the 
+argument passed into invocation
+
+execution moves to the conditional on line 3, invoking the block_given?
+method (which returns true)
+
+execution then moves to line 4, which yields the return value of calling the 
++ method on `number` and passing 1 in as an arg - 6
+
+execution then returns to line 10, where the block local variable
+num is initialized to 6
+
+execution then moves to line 11, where the puts method is inokved and 
+num is passed in as an arg outputting a string rep of num and returingn
+nil
+
+execution then moves to line 12, the end of the block
+
+execution then returns to the method implementation, where line 4 was previously
+executed
+
+execution moves to line 5, the end of the conditional
+
+line 6, calls number + 1, returns 6 to...
+
+...back to line 10, where the method was originally invoked - nothing is 
+done with the returned value from the method call
+
